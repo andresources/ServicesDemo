@@ -24,6 +24,7 @@ class Ex5LiveDataServiceMainActivity : AppCompatActivity() {
 
     fun fStartService(view: View) {
         val myService = Intent(this,Ex5Service::class.java)
+        myService.action = ACTION_START_SERVICE
         startService(myService)
     }
 }
